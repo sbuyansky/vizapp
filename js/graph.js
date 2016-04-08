@@ -5,7 +5,7 @@
 var Graph = function(){
     var self = this;
 
-    self.init()
+    self.init();
 }
 
 

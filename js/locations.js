@@ -5,7 +5,7 @@
 var Locations = function(){
     var self = this;
 
-    self.init()
+    self.init();
 }
 
 Locations.prototype.init = function(){
@@ -26,8 +26,8 @@ Locations.prototype.addLocation = function(id, name){
 
 Locations.prototype.changeLocation = function(id, name, index){
     var self = this;
-    index = parseInt(index);
-    self.collection[index].id = parseInt(id);
+    index = parseInt(index, 10);
+    self.collection[index].id = parseInt(id, 10);
     self.collection[index].name = name;
 }
 
@@ -69,7 +69,7 @@ Locations.prototype.hasLoc = function(id){
 var Location = function(id, name, color){
     var self = this;
 
-    self.id = parseInt(id);
+    self.id = parseInt(id, 10);
     self.name = name;
     self.color = color;
 }

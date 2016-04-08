@@ -4,7 +4,7 @@
 var VizApp = function(){
     var self = this;
 
-    self.init()
+    self.init();
 }
 
 
@@ -48,7 +48,7 @@ VizApp.prototype.updateFilteredData = function(){
 
     //country is variable, everything else constant
     self.data_filtered = self.data_full.filter(function(row){
-        return (row.age_group_id < 36 && row.metric == "overweight" && row.year == "2013" && location_ids.includes(parseInt(row.location_id)) && row.sex_id == "3");
+        return (row.age_group_id < 36 && row.metric == "overweight" && row.year == "2013" && location_ids.includes(parseInt(row.location_id, 10)) && row.sex_id == "3");
     });
 };
 
