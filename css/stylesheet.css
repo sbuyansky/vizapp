@@ -1,0 +1,42 @@
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+}
+
+#container{
+	width:1200px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.axis path{
+  fill: none;
+  stroke: #000;
+}
+
+.axis line{
+  fill: none;
+  stroke: #000;
+}
+
+.x.axis path {
+  display: none;
+}
+
+svg {
+    display: block;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title{
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+
+#selector{
+    visibility: hidden;
+}
